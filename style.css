@@ -1,0 +1,59 @@
+/* Basic Reset and Variables */
+:root {
+    --primary-color: #4CAF50; /* Green */
+    --secondary-color: #FFC107; /* Amber */
+    --bg-color: #f4f4f9;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
+/* Header & Nav */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Pet Grid */
+#pet-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Pet Card Styling */
+.pet-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.pet-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.pet-card button {
+    background-color: var(--secondary-color);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
